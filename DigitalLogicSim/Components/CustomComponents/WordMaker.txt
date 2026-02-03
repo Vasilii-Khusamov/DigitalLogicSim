@@ -1,0 +1,7 @@
+component WordMaker(inputs : signal[])
+{
+	for (i in range(inputs.length))
+	{
+		Buffer("[$i]", "out", inputs[i]);
+	}
+}

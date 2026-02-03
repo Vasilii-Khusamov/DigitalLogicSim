@@ -1,0 +1,19 @@
+{
+  "name": "Not",
+  "inputs": [
+    { "in": "signal" }
+  ],
+  "outputs": [
+    { "out": "nand.out" }
+  ],
+  "components": [
+    {
+      "type": "Nand",
+      "name": "nand",
+      "inputs": [
+        { "inA": "in" },
+        { "inB": "in" }
+      ]
+    }
+  ]
+}

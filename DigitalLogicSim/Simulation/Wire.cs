@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace DigitalLogicSim.Simulation
 {
-    internal interface LogicComponent
+    internal class Wire
     {
-        void Update();
+        public bool Value { get; set; } = false;
+        public Wire() { }
     }
 }

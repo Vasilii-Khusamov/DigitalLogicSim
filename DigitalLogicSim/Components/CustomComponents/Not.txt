@@ -1,4 +1,0 @@
-Component Not(in : signal)
-{
-	Nand("nand", in, in);
-}

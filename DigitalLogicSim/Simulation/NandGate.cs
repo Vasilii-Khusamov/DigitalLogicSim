@@ -8,12 +8,18 @@ namespace DigitalLogicSim.Simulation
 {
     internal class NandGate : LogicComponent
     {
-        Wire inputA;
-        Wire inputB;
-        Wire output;
+        private Wire _inputA;
+        private Wire _inputB;
+        private Wire _output;
+        public NandGate(Wire inputA, Wire inputB, Wire output)
+        {
+            _inputB = inputB;
+            _inputA = inputA;
+            _output = output;
+        }
         void LogicComponent.Update()
         { 
-            output.Value = !(inputA.Value && inputB.Value);
+            _output.Value = !(_inputA.Value && _inputB.Value);
         }
     }
 }
